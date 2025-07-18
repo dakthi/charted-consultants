@@ -1,7 +1,7 @@
 import { getPostSlugs, getPostBySlug } from "@/lib/post";
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import fallbackImg from "../../../public/img/Portrait_Placeholder.png";
+const fallbackImg = "/img/Portrait_Placeholder.png";
 
 // 🧩 Utility to chunk an array into chunks of `size`
 function chunkArray<T>(array: T[], size: number): T[][] {
