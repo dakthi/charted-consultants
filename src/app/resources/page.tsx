@@ -194,6 +194,7 @@ export default function ResourcesPage() {
           </div>
         </div>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }

@@ -173,6 +173,7 @@ export default function CasesPage() {
           </div>
         </div>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }

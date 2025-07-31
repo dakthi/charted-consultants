@@ -129,6 +129,7 @@ export default function ApproachPage() {
           </div>
         </div>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }

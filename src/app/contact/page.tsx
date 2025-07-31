@@ -241,6 +241,7 @@ export default function ContactPage() {
           Schedule Discovery Call
         </button>
       </div>
-    </Container>
+      </Container>
+    </>
   );
 }
