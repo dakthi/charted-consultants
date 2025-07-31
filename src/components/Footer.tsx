@@ -4,11 +4,21 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Approach", "Services", "Case Studies", "Testimonials", "FAQ"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const navigation = [
+    { name: "Approach", href: "/approach" },
+    { name: "Services", href: "/services" },
+    { name: "Case Studies", href: "/cases" },
+    { name: "Resources", href: "/resources" },
+    { name: "Blog", href: "/blog" }
+  ];
+  const legal = [
+    { name: "Terms", href: "/terms" },
+    { name: "Privacy", href: "/privacy" },
+    { name: "Contact", href: "/contact" }
+  ];
 
   return (
-    <div className="relative bg-gray-950">
+    <div className="relative bg-gray-950 dark:bg-gray-950">
       <Container>
         <div className="grid max-w-screen-xl grid-cols-1 text-white gap-10 pt-10 mx-auto lg:grid-cols-5 px-4 md:px-0">
           <div className="lg:col-span-2">
@@ -35,10 +45,10 @@ export function Footer() {
               {navigation.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
-                  className="text-sm text-white hover:text-white transition-colors"
+                  href={item.href}
+                  className="text-sm text-white dark:text-gray-200 hover:text-white dark:hover:text-white transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
@@ -49,17 +59,17 @@ export function Footer() {
               {legal.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
-                  className="text-sm text-white hover:text-white transition-colors"
+                  href={item.href}
+                  className="text-sm text-white dark:text-gray-200 hover:text-white dark:hover:text-white transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
           </div>
 
           <div className="">
-            <div className="text-sm text-white mb-3">Stay connected</div>
+            <div className="text-sm text-white dark:text-gray-200 mb-3">Stay connected</div>
             <div className="flex space-x-5 text-white">
               <a href="https://www.instagram.com/charted.consulting" target="_blank" rel="noopener">
                 <span className="sr-only">Instagram</span>
@@ -73,7 +83,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-xs text-center text-white">
+        <div className="my-10 text-xs text-center text-white dark:text-gray-200">
           &copy; {new Date().getFullYear()} Charted Consultants. All rights reserved.
         </div>
       </Container>

@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export const THWCTA = () => {
   return (
     <section className="bg-gray-900 text-white py-20 px-6 md:px-12 text-center min-h-screen flex flex-col justify-center">
@@ -11,12 +13,12 @@ export const THWCTA = () => {
           No back-and-forth. No hidden fees. Just one focused session — and you walk away with a real, live website you're proud of.
         </p>
 
-        <a
+        <Link
           href="/contact"
           className="inline-block bg-white text-gray-900 px-12 py-6 font-semibold text-lg rounded-lg hover:bg-gray-200 transition-colors duration-200 shadow-lg hover:shadow-xl"
         >
           Book Your Discovery Call
-        </a>
+        </Link>
 
         <p className="mt-8 text-lg text-gray-400">
           Limited slots each month · You own everything we build · No subscriptions required
