@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export const THWExampleSites = () => {
   const sites = [
     {
@@ -31,9 +33,11 @@ export const THWExampleSites = () => {
             rel="noopener noreferrer"
             className="group block border rounded-md overflow-hidden shadow hover:shadow-lg transition"
           >
-            <img
+            <Image
               src={site.img}
               alt={site.name}
+              width={400}
+              height={192}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="p-4">

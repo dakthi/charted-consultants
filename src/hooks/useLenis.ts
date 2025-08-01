@@ -8,7 +8,6 @@ export const useLenis = () => {
       easing: (t: number) => 1 - Math.pow(1 - t, 3), // Gentler easing curve
       wheelMultiplier: 0.5, // Much less aggressive wheel response
       touchMultiplier: 0.8, // Slower touch response
-      smooth: true,
     });
 
     const raf = (time: number) => {

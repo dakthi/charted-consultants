@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import { useLenis } from '@/hooks/useLenis';
 import { Navbar } from '@/components/Navbar';
 import { CaseStudyFilters } from '@/components/cases/CaseStudyFilters';
@@ -62,9 +63,11 @@ export default function CasesPage() {
       <div className="relative isolate">
         {/* Mobile image */}
         <div className="block md:hidden w-full">
-          <img
+          <Image
             src="/img/lone-sailboat-2.png"
             alt="Lone Sailboat"
+            width={800}
+            height={600}
             className="w-full h-auto object-cover"
           />
         </div>

@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import { useLenis } from '@/hooks/useLenis';
 import { Navbar } from '@/components/Navbar';
 import { About } from '@/components/About';
@@ -44,10 +45,11 @@ export default function HomePage() {
     <div className="relative min-h-screen">
       {/* Full-screen background */}
       <div className="block md:hidden fixed inset-0 z-0">
-        <img
+        <Image
           src="/img/lone-sailboat-2.png"
           alt="Lone Sailboat"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
 

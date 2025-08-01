@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from '@/components/Container';
 
 export const THWHero = () => {
@@ -42,27 +43,31 @@ export const THWHero = () => {
   <div className="relative w-full max-w-4xl">
     {/* Back image */}
     <div className="absolute inset-0 transform rotate-3 scale-90 opacity-40 z-10">
-      <img
+      <Image
         src="/img/example-lieu-1.png"
         alt="Example website back"
-        className="w-full h-full object-contain rounded-lg shadow-xl border border-gray-200"
+        fill
+        className="object-contain rounded-lg shadow-xl border border-gray-200"
       />
     </div>
 
     {/* Middle image */}
     <div className="absolute inset-0 transform -rotate-1 scale-95 opacity-70 z-20">
-      <img
+      <Image
         src="/img/example-lieu-1.png"
         alt="Example website middle"
-        className="w-full h-full object-contain rounded-lg shadow-xl border border-gray-200"
+        fill
+        className="object-contain rounded-lg shadow-xl border border-gray-200"
       />
     </div>
 
     {/* Front image */}
     <div className="relative z-30">
-      <img
+      <Image
         src="/img/example-lieu-1.png"
         alt="Example website built in three hours"
+        width={800}
+        height={600}
         className="w-full h-auto object-contain rounded-lg shadow-2xl border border-gray-200"
       />
     </div>
