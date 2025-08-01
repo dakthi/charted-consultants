@@ -17,10 +17,10 @@ export function DirectCallEmail() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Prefer to talk directly?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Sometimes a conversation is worth a thousand forms. Reach out however feels most comfortable.
           </p>
         </motion.div>
@@ -37,8 +37,8 @@ export function DirectCallEmail() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Schedule a Call</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Schedule a Call</h3>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Book a 30-minute discovery call to discuss your specific situation and explore how we can help.
             </p>
             <a
@@ -66,8 +66,8 @@ export function DirectCallEmail() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Email Directly</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Email Directly</h3>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Send us a detailed message about your project. We read every email and respond personally.
             </p>
             <a
@@ -92,10 +92,10 @@ export function DirectCallEmail() {
           transition={{ duration: 0.7, delay: 0.7, ease: 'easeOut' }}
         >
           <div className="bg-white rounded-2xl p-6 inline-block shadow-sm">
-            <p className="text-gray-600 text-sm mb-2">
+            <p className="text-gray-700 text-sm mb-2">
               <strong>Response time:</strong> Usually within 4-6 hours during business hours
             </p>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-700 text-sm">
               <strong>Best times to call:</strong> Monday-Friday, 9 AM - 5 PM PST
             </p>
           </div>

@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className="flex flex-wrap items-center">
       <div className="order-last xl:order-first flex items-start w-full lg:w-1/2 pl-5 pr-5 xl:pl-0 xl:pr-0">
         <div className="max-w-xl">
-          <p className="text-lg font-bold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-4xl xl:leading-tight">
+          <p className="text-lg font-semibold leading-snug tracking-tight text-gray-800 lg:text-2xl lg:leading-tight xl:text-4xl xl:leading-tight">
             Systems that support people.
             <br />
             Stories that build trust.

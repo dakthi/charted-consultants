@@ -15,7 +15,7 @@ export const MomentumSystem = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isMomentumInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -53,21 +53,21 @@ export const MomentumSystem = () => {
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Editorial Rhythm</h4>
-                    <p className="text-gray-600 text-sm">Sustainable content schedule that builds authority without burnout</p>
+                    <p className="text-gray-700 text-sm">Sustainable content schedule that builds authority without burnout</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Performance Tracking</h4>
-                    <p className="text-gray-600 text-sm">Clear metrics that show what's resonating and where to focus</p>
+                    <p className="text-gray-700 text-sm">Clear metrics that show what's resonating and where to focus</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-purple-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Iterative Improvement</h4>
-                    <p className="text-gray-600 text-sm">Systems that evolve and improve as your business grows</p>
+                    <p className="text-gray-700 text-sm">Systems that evolve and improve as your business grows</p>
                   </div>
                 </div>
               </div>
@@ -85,28 +85,28 @@ export const MomentumSystem = () => {
                     <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">1</div>
                     <div>
                       <h4 className="font-medium text-gray-900">Measure</h4>
-                      <p className="text-gray-600 text-sm">Track what matters: traffic, leads, conversions, client satisfaction</p>
+                      <p className="text-gray-700 text-sm">Track what matters: traffic, leads, conversions, client satisfaction</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">2</div>
                     <div>
                       <h4 className="font-medium text-gray-900">Create</h4>
-                      <p className="text-gray-600 text-sm">Regular content that showcases expertise and builds trust</p>
+                      <p className="text-gray-700 text-sm">Regular content that showcases expertise and builds trust</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">3</div>
                     <div>
                       <h4 className="font-medium text-gray-900">Optimize</h4>
-                      <p className="text-gray-600 text-sm">Refine based on data, feedback, and changing business needs</p>
+                      <p className="text-gray-700 text-sm">Refine based on data, feedback, and changing business needs</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold mr-4">4</div>
                     <div>
                       <h4 className="font-medium text-gray-900">Scale</h4>
-                      <p className="text-gray-600 text-sm">Expand what works, eliminate what doesn't, compound success</p>
+                      <p className="text-gray-700 text-sm">Expand what works, eliminate what doesn't, compound success</p>
                     </div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export const MomentumSystem = () => {
             <blockquote className="text-xl font-light leading-relaxed mb-4 text-gray-900">
               "Success isn't about one perfect campaign. It's about building systems that get better every month."
             </blockquote>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-700 text-sm">
               Consistent improvement over dramatic transformations
             </p>
           </motion.div>

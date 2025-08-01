@@ -15,7 +15,7 @@ export const LegacyModernComparison = () => {
       >
         <div className="max-w-7xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isComparisonInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -46,7 +46,7 @@ export const LegacyModernComparison = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-red-800 mb-2">Before: Legacy State</h3>
+                <h3 className="text-2xl font-semibold text-red-800 mb-2">Before: Legacy State</h3>
                 <p className="text-red-700 text-sm">45-year-old precision engineering firm</p>
               </div>
 
@@ -128,7 +128,7 @@ export const LegacyModernComparison = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-green-800 mb-2">After: Modern Operations</h3>
+                <h3 className="text-2xl font-semibold text-green-800 mb-2">After: Modern Operations</h3>
                 <p className="text-green-700 text-sm">Same expertise, modern systems</p>
               </div>
 
@@ -212,16 +212,16 @@ export const LegacyModernComparison = () => {
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-2xl font-bold text-blue-600 mb-1">1700%</div>
-                <div className="text-sm text-gray-600">Increase in monthly inquiries</div>
+                <div className="text-2xl font-semibold text-blue-600 mb-1">1700%</div>
+                <div className="text-sm text-gray-700">Increase in monthly inquiries</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-green-600 mb-1">73%</div>
-                <div className="text-sm text-gray-600">Improvement in conversion rate</div>
+                <div className="text-2xl font-semibold text-green-600 mb-1">73%</div>
+                <div className="text-sm text-gray-700">Improvement in conversion rate</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-purple-600 mb-1">85%</div>
-                <div className="text-sm text-gray-600">Reduction in administrative time</div>
+                <div className="text-2xl font-semibold text-purple-600 mb-1">85%</div>
+                <div className="text-sm text-gray-700">Reduction in administrative time</div>
               </div>
             </div>
           </motion.div>

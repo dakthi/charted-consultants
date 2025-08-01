@@ -38,7 +38,7 @@ export const ProofAndOutcomes = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isProofInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -64,9 +64,9 @@ export const ProofAndOutcomes = () => {
                 animate={isProofInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.7 }}
               >
-                <div className="text-4xl font-bold text-blue-600 mb-2">{outcome.metric}</div>
+                <div className="text-4xl font-semibold text-blue-600 mb-2">{outcome.metric}</div>
                 <h3 className="font-semibold text-gray-900 mb-2">{outcome.description}</h3>
-                <p className="text-sm text-gray-600">{outcome.context}</p>
+                <p className="text-sm text-gray-700">{outcome.context}</p>
               </motion.div>
             ))}
           </div>
@@ -110,15 +110,15 @@ export const ProofAndOutcomes = () => {
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded border-l-4 border-green-500">
                       <div className="font-semibold text-gray-900">300% increase in qualified leads</div>
-                      <div className="text-sm text-gray-600">From 2-3 per month to 12-15 per month</div>
+                      <div className="text-sm text-gray-700">From 2-3 per month to 12-15 per month</div>
                     </div>
                     <div className="bg-white p-4 rounded border-l-4 border-blue-500">
                       <div className="font-semibold text-gray-900">£2.4M new revenue in year one</div>
-                      <div className="text-sm text-gray-600">Direct attribution to digital transformation</div>
+                      <div className="text-sm text-gray-700">Direct attribution to digital transformation</div>
                     </div>
                     <div className="bg-white p-4 rounded border-l-4 border-purple-500">
                       <div className="font-semibold text-gray-900">85% reduction in admin time</div>
-                      <div className="text-sm text-gray-600">Automated quoting and client communication</div>
+                      <div className="text-sm text-gray-700">Automated quoting and client communication</div>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export const ProofAndOutcomes = () => {
               find us, understand what we do, and decide to work with us. The systems they built 
               are still driving growth two years later."
             </blockquote>
-            <cite className="text-gray-600">
+            <cite className="text-gray-700">
               <span className="font-medium">David Richardson</span><br />
               <span className="text-sm">Managing Director, Heritage Manufacturing</span>
             </cite>

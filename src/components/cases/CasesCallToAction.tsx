@@ -94,17 +94,17 @@ export const CasesCallToAction = () => {
             transition={{ delay: 0.8, duration: 0.7 }}
           >
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
+              <div className="text-3xl font-semibold text-blue-400 mb-2">50+</div>
               <div className="text-white font-medium mb-1">Businesses Transformed</div>
               <div className="text-gray-300 text-sm">Across manufacturing, services, retail, and hospitality</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-green-400 mb-2">£12M+</div>
+              <div className="text-3xl font-semibold text-green-400 mb-2">£12M+</div>
               <div className="text-white font-medium mb-1">Additional Revenue Generated</div>
               <div className="text-gray-300 text-sm">Documented impact across all client transformations</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-purple-400 mb-2">2+ Years</div>
+              <div className="text-3xl font-semibold text-purple-400 mb-2">2+ Years</div>
               <div className="text-white font-medium mb-1">Average Ongoing Growth</div>
               <div className="text-gray-300 text-sm">Systems that keep delivering results long-term</div>
             </div>

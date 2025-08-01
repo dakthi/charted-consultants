@@ -37,10 +37,10 @@ export function ResourcesFAQ() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             FAQ Section
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Common questions about getting started
           </h2>
         </motion.div>
@@ -58,7 +58,7 @@ export function ResourcesFAQ() {
                 className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
-                <h3 className="font-bold text-gray-900">{faq.question}</h3>
+                <h3 className="font-semibold text-gray-900">{faq.question}</h3>
                 <svg 
                   className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
                   fill="none" 
@@ -70,7 +70,7 @@ export function ResourcesFAQ() {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-4">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </motion.div>
@@ -83,7 +83,7 @@ export function ResourcesFAQ() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
         >
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-700 mb-4">
             Have a question that's not covered here?
           </p>
           <a 

@@ -76,7 +76,7 @@ function Avatar(props: Readonly<AvatarProps>) {
       </div>
       <div>
         <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600">{props.title}</div>
+        <div className="text-gray-700">{props.title}</div>
       </div>
     </div>
   );

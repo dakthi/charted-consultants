@@ -17,13 +17,13 @@ export function VideoTutorials() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Video Tutorials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Learn by doing
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Short, practical videos showing you exactly how to use tools, publish content, and review your analytics.
           </p>
         </motion.div>
@@ -47,8 +47,8 @@ export function VideoTutorials() {
                 </span>
                 <span className="text-xs text-gray-500">BEGINNER</span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Setting Up Google Analytics 4</h3>
-              <p className="text-gray-600 text-sm mb-4">
+              <h3 className="font-semibold text-gray-900 mb-2">Setting Up Google Analytics 4</h3>
+              <p className="text-gray-700 text-sm mb-4">
                 Step-by-step setup of GA4 with the essential configurations for service businesses.
               </p>
             </div>
@@ -72,8 +72,8 @@ export function VideoTutorials() {
                 </span>
                 <span className="text-xs text-gray-500">INTERMEDIATE</span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Content Batching Workflow</h3>
-              <p className="text-gray-600 text-sm mb-4">
+              <h3 className="font-semibold text-gray-900 mb-2">Content Batching Workflow</h3>
+              <p className="text-gray-700 text-sm mb-4">
                 How to create a month's worth of content in one focused session using our proven system.
               </p>
             </div>
@@ -97,8 +97,8 @@ export function VideoTutorials() {
                 </span>
                 <span className="text-xs text-gray-500">ADVANCED</span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Domain Migration Guide</h3>
-              <p className="text-gray-600 text-sm mb-4">
+              <h3 className="font-semibold text-gray-900 mb-2">Domain Migration Guide</h3>
+              <p className="text-gray-700 text-sm mb-4">
                 Complete walkthrough of moving your website from a rental platform to your own domain.
               </p>
             </div>

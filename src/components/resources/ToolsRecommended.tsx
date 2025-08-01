@@ -16,10 +16,10 @@ export function ToolsRecommended() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Tools We Recommend
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-12">
             The tech stack that actually works
           </h2>
         </motion.div>
@@ -37,8 +37,8 @@ export function ToolsRecommended() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9a9 9 0 01-9-9m9 9c0 5-4 9-9 9s-9-4-9-9m9 9c0-5 4-9 9-9s9 4 9 9" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Domain Registrars</h3>
-              <ul className="space-y-1 text-sm text-gray-600">
+              <h3 className="font-semibold text-gray-900 mb-2">Domain Registrars</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li>Namecheap (recommended)</li>
                 <li>Google Domains</li>
                 <li>Porkbun</li>
@@ -58,8 +58,8 @@ export function ToolsRecommended() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Hosting Platforms</h3>
-              <ul className="space-y-1 text-sm text-gray-600">
+              <h3 className="font-semibold text-gray-900 mb-2">Hosting Platforms</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li>Vercel (recommended)</li>
                 <li>Netlify</li>
                 <li>Cloudflare Pages</li>
@@ -79,8 +79,8 @@ export function ToolsRecommended() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Analytics Tools</h3>
-              <ul className="space-y-1 text-sm text-gray-600">
+              <h3 className="font-semibold text-gray-900 mb-2">Analytics Tools</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li>Google Analytics 4</li>
                 <li>Plausible Analytics</li>
                 <li>PostHog</li>
@@ -100,8 +100,8 @@ export function ToolsRecommended() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Video Editors</h3>
-              <ul className="space-y-1 text-sm text-gray-600">
+              <h3 className="font-semibold text-gray-900 mb-2">Video Editors</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li>ScreenFlow (Mac)</li>
                 <li>Camtasia (PC)</li>
                 <li>Loom (Quick clips)</li>
@@ -116,12 +116,12 @@ export function ToolsRecommended() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 1.0, ease: 'easeOut' }}
         >
-          <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Complete Tech Stack Recommendations</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Complete Tech Stack Recommendations</h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">For Website Ownership</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h4 className="font-semibold text-gray-900 mb-4">For Website Ownership</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-center">
                   <span className="text-indigo-600 mr-2">✓</span>
                   Domain: Namecheap or Google Domains
@@ -142,8 +142,8 @@ export function ToolsRecommended() {
             </div>
             
             <div>
-              <h4 className="font-bold text-gray-900 mb-4">For Content Creation</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h4 className="font-semibold text-gray-900 mb-4">For Content Creation</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-center">
                   <span className="text-indigo-600 mr-2">✓</span>
                   Writing: Notion or Obsidian

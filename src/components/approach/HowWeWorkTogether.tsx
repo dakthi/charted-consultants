@@ -66,7 +66,7 @@ export const HowWeWorkTogether = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isWorkInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -124,7 +124,7 @@ export const HowWeWorkTogether = () => {
                       {phase.activities.map((activity, activityIndex) => (
                         <div
                           key={activityIndex}
-                          className="flex items-center text-sm text-gray-600"
+                          className="flex items-center text-sm text-gray-700"
                         >
                           <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 flex-shrink-0"></div>
                           {activity}
@@ -147,21 +147,21 @@ export const HowWeWorkTogether = () => {
             <div className="grid md:grid-cols-3 gap-8 text-left">
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Business-First Approach</h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 text-sm">
                   We start with your business needs, not technical possibilities. 
                   Every recommendation serves a clear business purpose.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Transparent Communication</h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 text-sm">
                   Regular updates, clear timelines, and honest feedback. 
                   You'll always know what's happening and why.
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">Knowledge Transfer</h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-700 text-sm">
                   We document everything and train your team so you're never 
                   dependent on external support for basic updates.
                 </p>

@@ -18,13 +18,13 @@ export function TemplateLibrary() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Template Library
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Ready-to-use templates and checklists
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Editable documents that save you time and ensure you don't miss critical steps.
           </p>
         </motion.div>
@@ -46,8 +46,8 @@ export function TemplateLibrary() {
                 PLANNING
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Content Calendar Template</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Content Calendar Template</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               12-month content planning template with the 1-2-4-7 system built in. Includes content types, publishing schedules, and performance tracking.
             </p>
             <div className="flex items-center justify-between">
@@ -77,8 +77,8 @@ export function TemplateLibrary() {
                 MARKETING
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Campaign Brief Template</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Campaign Brief Template</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Complete marketing campaign planning template. From objectives and target audience to messaging and success metrics.
             </p>
             <div className="flex items-center justify-between">
@@ -108,8 +108,8 @@ export function TemplateLibrary() {
                 TECHNICAL
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Tech Audit Checklist</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Tech Audit Checklist</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Comprehensive checklist for auditing your current tech stack. Identify gaps, redundancies, and optimization opportunities.
             </p>
             <div className="flex items-center justify-between">
@@ -139,8 +139,8 @@ export function TemplateLibrary() {
                 ANALYTICS
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Performance Dashboard</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Performance Dashboard</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Pre-built dashboard template to track the metrics that actually matter for your business growth and content performance.
             </p>
             <div className="flex items-center justify-between">
@@ -170,8 +170,8 @@ export function TemplateLibrary() {
                 CLIENT
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Client Onboarding Kit</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Client Onboarding Kit</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Complete client onboarding process including intake forms, project timelines, and communication templates.
             </p>
             <div className="flex items-center justify-between">
@@ -201,8 +201,8 @@ export function TemplateLibrary() {
                 COMPLETE KIT
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Starter Pack Bundle</h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Starter Pack Bundle</h3>
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Get all templates plus bonus resources: migration guides, vendor comparison sheets, and quarterly review templates.
             </p>
             <div className="flex items-center justify-between">
@@ -223,7 +223,7 @@ export function TemplateLibrary() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 1.4, ease: 'easeOut' }}
         >
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-700 mb-4">
             All templates are editable and come with instructions for customization.
           </p>
           <Link 

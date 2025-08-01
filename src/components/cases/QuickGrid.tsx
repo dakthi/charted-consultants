@@ -51,7 +51,7 @@ export const QuickGrid = () => {
       >
         <div className="max-w-7xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isGridInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -108,7 +108,7 @@ export const QuickGrid = () => {
                   <div className="space-y-3">
                     <div>
                       <h4 className="text-sm font-medium text-gray-700 mb-1">Challenge</h4>
-                      <p className="text-sm text-gray-600">{caseCard.challenge}</p>
+                      <p className="text-sm text-gray-700">{caseCard.challenge}</p>
                     </div>
                     
                     <div>
@@ -133,7 +133,7 @@ export const QuickGrid = () => {
             animate={isGridInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.8, duration: 0.7 }}
           >
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               Each transformation is unique, but the principles remain consistent: 
               ownership, expertise, and sustainable growth.
             </p>

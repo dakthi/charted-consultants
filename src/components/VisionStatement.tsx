@@ -14,7 +14,7 @@ export const VisionStatement = () => {
         className="flex flex-col justify-center px-6 md:px-12 py-20 md:py-32"
       >
         <motion.p
-          className="uppercase text-sm tracking-wide mb-4 text-gray-600"
+          className="uppercase text-sm tracking-wide mb-4 text-gray-700"
           initial={{ opacity: 0, y: -10 }}
           animate={isVisionInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.7 }}

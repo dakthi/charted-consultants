@@ -23,7 +23,7 @@ export const THWExampleSites = () => {
 
   return (
     <div className="bg-gray-50 py-16 px-6 md:px-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">See What We’ve Built</h2>
+      <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">See What We’ve Built</h2>
       <div className="grid gap-8 md:grid-cols-3">
         {sites.map((site, i) => (
           <a

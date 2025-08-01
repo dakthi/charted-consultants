@@ -17,13 +17,13 @@ export function ExampleWorkflow() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide mb-4 text-gray-700">
             Example Workflow
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-light max-w-4xl leading-relaxed mb-6 text-gray-900">
             From discovery call to launch
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             A clear, predictable process that gets you from invisible to unmistakable.
           </p>
         </motion.div>
@@ -37,12 +37,12 @@ export function ExampleWorkflow() {
           >
             <div className="relative mb-8">
               <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-xl font-bold">1</span>
+                <span className="text-white text-xl font-semibold">1</span>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 transform translate-x-2"></div>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Discovery Call</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Discovery Call</h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
               45-minute conversation to understand your business, goals, and current challenges.
             </p>
             <div className="mt-4 text-xs text-gray-500">
@@ -58,12 +58,12 @@ export function ExampleWorkflow() {
           >
             <div className="relative mb-8">
               <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-xl font-bold">2</span>
+                <span className="text-white text-xl font-semibold">2</span>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 transform translate-x-2"></div>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Foundation Build</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Foundation Build</h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
               Website, booking system, and initial content creation. Technology stack setup.
             </p>
             <div className="mt-4 text-xs text-gray-500">
@@ -79,12 +79,12 @@ export function ExampleWorkflow() {
           >
             <div className="relative mb-8">
               <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-xl font-bold">3</span>
+                <span className="text-white text-xl font-semibold">3</span>
               </div>
               <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-200 transform translate-x-2"></div>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Launch & Test</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Launch & Test</h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
               Go live, test all systems, gather initial feedback, and optimize performance.
             </p>
             <div className="mt-4 text-xs text-gray-500">
@@ -105,8 +105,8 @@ export function ExampleWorkflow() {
                 </svg>
               </div>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Handover & Support</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Handover & Support</h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
               Complete ownership transfer, documentation, and optional ongoing support setup.
             </p>
             <div className="mt-4 text-xs text-gray-500">
@@ -123,19 +123,19 @@ export function ExampleWorkflow() {
         >
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">6</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Weeks</div>
-              <div className="text-gray-600 text-sm">Average project timeline</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">6</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Weeks</div>
+              <div className="text-gray-700 text-sm">Average project timeline</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">3</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Pillars</div>
-              <div className="text-gray-600 text-sm">Technology + Story + Momentum</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">3</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Pillars</div>
+              <div className="text-gray-700 text-sm">Technology + Story + Momentum</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">100%</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Ownership</div>
-              <div className="text-gray-600 text-sm">You own everything we build</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">100%</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Ownership</div>
+              <div className="text-gray-700 text-sm">You own everything we build</div>
             </div>
           </div>
         </motion.div>

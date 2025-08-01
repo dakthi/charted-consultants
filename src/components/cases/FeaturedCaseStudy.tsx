@@ -29,7 +29,7 @@ export const FeaturedCaseStudy = () => {
                 <span className="text-gray-500 text-sm">Manufacturing • Full Transformation</span>
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
                 Heritage Manufacturing Company: 
                 <span className="text-blue-600"> From Local to National</span>
               </h2>
@@ -42,16 +42,16 @@ export const FeaturedCaseStudy = () => {
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">300%</div>
-                  <div className="text-sm text-gray-600">Increase in qualified leads</div>
+                  <div className="text-2xl font-semibold text-blue-600 mb-1">300%</div>
+                  <div className="text-sm text-gray-700">Increase in qualified leads</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-green-600 mb-1">£2.4M</div>
-                  <div className="text-sm text-gray-600">New revenue in first year</div>
+                  <div className="text-2xl font-semibold text-green-600 mb-1">£2.4M</div>
+                  <div className="text-sm text-gray-700">New revenue in first year</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-purple-600 mb-1">85%</div>
-                  <div className="text-sm text-gray-600">Reduction in admin time</div>
+                  <div className="text-2xl font-semibold text-purple-600 mb-1">85%</div>
+                  <div className="text-sm text-gray-700">Reduction in admin time</div>
                 </div>
               </div>
               
@@ -64,7 +64,7 @@ export const FeaturedCaseStudy = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Complete Digital Transformation</h4>
-                    <p className="text-gray-600 text-sm">New website, CRM integration, automated quoting system</p>
+                    <p className="text-gray-700 text-sm">New website, CRM integration, automated quoting system</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -75,7 +75,7 @@ export const FeaturedCaseStudy = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Brand Storytelling</h4>
-                    <p className="text-gray-600 text-sm">Video case studies showcasing 45 years of precision engineering</p>
+                    <p className="text-gray-700 text-sm">Video case studies showcasing 45 years of precision engineering</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -86,7 +86,7 @@ export const FeaturedCaseStudy = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Growth Systems</h4>
-                    <p className="text-gray-600 text-sm">Sustainable content strategy and performance tracking</p>
+                    <p className="text-gray-700 text-sm">Sustainable content strategy and performance tracking</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export const FeaturedCaseStudy = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">David Richardson</p>
-                    <p className="text-sm text-gray-600">Managing Director</p>
+                    <p className="text-sm text-gray-700">Managing Director</p>
                   </div>
                 </div>
               </div>

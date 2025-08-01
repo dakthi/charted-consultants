@@ -8,7 +8,7 @@ export const THWHero = () => {
       <div className="flex flex-col items-center justify-center text-center space-y-16 mt-20">
         {/* Text Content */}
         <div className="flex flex-col items-center max-w-4xl">
-          <h1 className="text-4xl font-bold leading-tight text-white lg:text-6xl lg:leading-tight mb-6">
+          <h1 className="text-4xl font-semibold leading-tight text-white lg:text-6xl lg:leading-tight mb-6">
             A complete website in just three hours.
           </h1>
 

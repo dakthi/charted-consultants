@@ -69,3 +69,14 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     expert: data.expert,
   };
 }
+
+export async function getAllPosts(): Promise<Post[]> {
+  const slugs = getPostSlugs();
+  const posts = await Promise.all(slugs.map((slug) => getPostBySlug(slug)));
+  
+  // Sort posts by date (newest first)
+  return posts.sort((a, b) => {
+    if (!a.date || !b.date) return 0;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+}

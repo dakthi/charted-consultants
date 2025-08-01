@@ -17,13 +17,13 @@ export function ServicesCallToAction() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide mb-4 text-gray-700">
             Ready to Build
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-light max-w-4xl leading-relaxed mb-6 text-gray-900">
             Let's build your foundation
           </h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
             Stop renting your digital presence. Start with a free discovery call to explore how we can make you unmistakable.
           </p>
         </motion.div>
@@ -40,8 +40,8 @@ export function ServicesCallToAction() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-2">Free Discovery Call</h3>
-            <p className="text-sm text-gray-600">45 minutes to understand your business and explore possibilities</p>
+            <h3 className="font-semibold text-gray-900 mb-2">Free Discovery Call</h3>
+            <p className="text-sm text-gray-700">45 minutes to understand your business and explore possibilities</p>
           </div>
           
           <div className="bg-gray-50 rounded-xl p-6">
@@ -50,8 +50,8 @@ export function ServicesCallToAction() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-2">Clear Proposal</h3>
-            <p className="text-sm text-gray-600">Fixed-price proposal with clear deliverables and timeline</p>
+            <h3 className="font-semibold text-gray-900 mb-2">Clear Proposal</h3>
+            <p className="text-sm text-gray-700">Fixed-price proposal with clear deliverables and timeline</p>
           </div>
         </motion.div>
 
@@ -85,16 +85,16 @@ export function ServicesCallToAction() {
           className="mt-16 grid md:grid-cols-3 gap-8 text-center"
         >
           <div>
-            <div className="text-2xl font-bold text-indigo-600 mb-2">Technology</div>
-            <div className="text-gray-600 text-sm">Built for speed and ownership</div>
+            <div className="text-2xl font-semibold text-indigo-600 mb-2">Technology</div>
+            <div className="text-gray-700 text-sm">Built for speed and ownership</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-indigo-600 mb-2">Story</div>
-            <div className="text-gray-600 text-sm">Content that builds authority</div>
+            <div className="text-2xl font-semibold text-indigo-600 mb-2">Story</div>
+            <div className="text-gray-700 text-sm">Content that builds authority</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-indigo-600 mb-2">Momentum</div>
-            <div className="text-gray-600 text-sm">Systems that compound results</div>
+            <div className="text-2xl font-semibold text-indigo-600 mb-2">Momentum</div>
+            <div className="text-gray-700 text-sm">Systems that compound results</div>
           </div>
         </motion.div>
       </div>

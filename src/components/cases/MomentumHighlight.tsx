@@ -22,7 +22,7 @@ export const MomentumHighlight = () => {
       >
         <div className="max-w-7xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isMomentumInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -109,16 +109,16 @@ export const MomentumHighlight = () => {
                     </div>
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
-                        <div className="text-lg font-bold text-blue-600">{data.leads}</div>
-                        <div className="text-xs text-gray-600">Qualified Leads</div>
+                        <div className="text-lg font-semibold text-blue-600">{data.leads}</div>
+                        <div className="text-xs text-gray-700">Qualified Leads</div>
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-green-600">{data.conversion}</div>
-                        <div className="text-xs text-gray-600">Conversion Rate</div>
+                        <div className="text-lg font-semibold text-green-600">{data.conversion}</div>
+                        <div className="text-xs text-gray-700">Conversion Rate</div>
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-purple-600">{data.revenue}</div>
-                        <div className="text-xs text-gray-600">Monthly Revenue</div>
+                        <div className="text-lg font-semibold text-purple-600">{data.revenue}</div>
+                        <div className="text-xs text-gray-700">Monthly Revenue</div>
                       </div>
                     </div>
                     
@@ -169,7 +169,7 @@ export const MomentumHighlight = () => {
               got smarter, our content got better, and our results improved. Two years later, 
               it's still growing."
             </blockquote>
-            <cite className="text-gray-600">
+            <cite className="text-gray-700">
               <span className="font-medium">David Richardson</span><br />
               <span className="text-sm">Managing Director, Heritage Manufacturing</span>
             </cite>

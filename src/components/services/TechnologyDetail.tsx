@@ -16,10 +16,10 @@ export function TechnologyDetail() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide mb-4 text-gray-700">
             Technology Foundation
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-light max-w-4xl leading-relaxed mb-12 text-gray-900">
             Built for speed, built to last
           </h2>
         </motion.div>
@@ -36,11 +36,11 @@ export function TechnologyDetail() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9a9 9 0 01-9-9m9 9c0 5-4 9-9 9s-9-4-9-9m9 9c0-5 4-9 9-9s9 4 9 9" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Websites</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Websites</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
               Fast, mobile-ready, SEO-friendly websites that you actually own.
             </p>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-center">
                 <span className="text-indigo-600 mr-2">✓</span>
                 Lightning-fast loading
@@ -67,11 +67,11 @@ export function TechnologyDetail() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Booking & Payments</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Booking & Payments</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
               Smooth customer experience from first click to final payment.
             </p>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-center">
                 <span className="text-indigo-600 mr-2">✓</span>
                 Integrated scheduling
@@ -98,11 +98,11 @@ export function TechnologyDetail() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Analytics</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Analytics</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
               Clear visibility on what's working and what needs attention.
             </p>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-center">
                 <span className="text-indigo-600 mr-2">✓</span>
                 Real-time dashboards

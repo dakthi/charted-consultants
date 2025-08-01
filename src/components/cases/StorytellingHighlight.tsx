@@ -16,7 +16,7 @@ export const StorytellingHighlight = () => {
       >
         <div className="max-w-7xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isStoryInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -46,7 +46,7 @@ export const StorytellingHighlight = () => {
                 <div className="space-y-6">
                   <div className="border-l-4 border-red-500 pl-6">
                     <h4 className="font-semibold text-gray-900 mb-2">Before: Invisible Expertise</h4>
-                    <ul className="text-gray-600 space-y-1 text-sm">
+                    <ul className="text-gray-700 space-y-1 text-sm">
                       <li>• No online presence beyond basic contact info</li>
                       <li>• 40 years of sourdough expertise completely undocumented</li>
                       <li>• Customers found them by accident or word-of-mouth only</li>
@@ -56,7 +56,7 @@ export const StorytellingHighlight = () => {
                   
                   <div className="border-l-4 border-green-500 pl-6">
                     <h4 className="font-semibold text-gray-900 mb-2">After: Discoverable Authority</h4>
-                    <ul className="text-gray-600 space-y-1 text-sm">
+                    <ul className="text-gray-700 space-y-1 text-sm">
                       <li>• Comprehensive process documentation with video</li>
                       <li>• SEO-optimized content that ranks for "artisan sourdough"</li>
                       <li>• Customer stories showcasing 40-year legacy</li>
@@ -93,16 +93,16 @@ export const StorytellingHighlight = () => {
               
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-gray-50 rounded">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">1900%</div>
-                  <div className="text-xs text-gray-600">Increase in online orders</div>
+                  <div className="text-2xl font-semibold text-blue-600 mb-1">1900%</div>
+                  <div className="text-xs text-gray-700">Increase in online orders</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded">
-                  <div className="text-2xl font-bold text-green-600 mb-1">#1</div>
-                  <div className="text-xs text-gray-600">Google ranking for key terms</div>
+                  <div className="text-2xl font-semibold text-green-600 mb-1">#1</div>
+                  <div className="text-xs text-gray-700">Google ranking for key terms</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded">
-                  <div className="text-2xl font-bold text-purple-600 mb-1">300%</div>
-                  <div className="text-xs text-gray-600">Growth in new customers</div>
+                  <div className="text-2xl font-semibold text-purple-600 mb-1">300%</div>
+                  <div className="text-xs text-gray-700">Growth in new customers</div>
                 </div>
               </div>
               
@@ -111,7 +111,7 @@ export const StorytellingHighlight = () => {
                   "People finally understand what makes our bread different. The orders started coming 
                   from customers who already knew they wanted artisan sourdough, not people who needed convincing."
                 </p>
-                <cite className="text-gray-600 not-italic">
+                <cite className="text-gray-700 not-italic">
                   <span className="font-medium">Sarah Mitchell</span><br />
                   <span className="text-sm">Owner, Heritage Bakery</span>
                 </cite>

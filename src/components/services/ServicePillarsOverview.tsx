@@ -16,10 +16,10 @@ export function ServicePillarsOverview() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide mb-4 text-gray-700">
             Three Pillars
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-light max-w-4xl leading-relaxed mb-12 text-gray-900">
             Technology + Story + Momentum
           </h2>
         </motion.div>
@@ -36,8 +36,8 @@ export function ServicePillarsOverview() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Technology</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Technology</h3>
+            <p className="text-gray-700 leading-relaxed">
               Fast, mobile-ready websites. Seamless booking & payments. Clear analytics on what's working.
             </p>
           </motion.div>
@@ -53,8 +53,8 @@ export function ServicePillarsOverview() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Story</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Story</h3>
+            <p className="text-gray-700 leading-relaxed">
               Video & photography. Social content creation. Blog & knowledge base setup.
             </p>
           </motion.div>
@@ -70,8 +70,8 @@ export function ServicePillarsOverview() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Momentum</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Momentum</h3>
+            <p className="text-gray-700 leading-relaxed">
               Publishing cadence (1–2–4–7 system). Performance tracking. Long-term support options.
             </p>
           </motion.div>

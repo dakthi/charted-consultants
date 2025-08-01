@@ -17,13 +17,13 @@ export function SubscribeDownload() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Get Everything
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Download the complete starter pack
           </h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
             All our templates, checklists, and guides in one downloadable package. Plus monthly updates with new resources.
           </p>
         </motion.div>
@@ -35,8 +35,8 @@ export function SubscribeDownload() {
             transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
           >
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">What's included in the starter pack:</h3>
-              <ul className="space-y-3 text-gray-600">
+              <h3 className="text-xl font-semibold text-gray-900 mb-6">What's included in the starter pack:</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -89,8 +89,8 @@ export function SubscribeDownload() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Download</h3>
-                <p className="text-gray-600 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-2">Free Download</h3>
+                <p className="text-gray-700 mb-6">
                   No catches, no spam. Just useful resources delivered to your inbox.
                 </p>
               </div>
@@ -131,7 +131,7 @@ export function SubscribeDownload() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.7, ease: 'easeOut' }}
         >
-          <p className="text-gray-600">
+          <p className="text-gray-700">
             Prefer to browse individual resources?{' '}
             <a href="#featured-guides" className="text-indigo-600 hover:text-indigo-700 font-medium">
               Scroll back up to explore

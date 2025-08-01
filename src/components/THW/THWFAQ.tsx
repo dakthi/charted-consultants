@@ -26,12 +26,12 @@ export const THWFAQ = () => {
 
   return (
     <section className="bg-gray-50 py-20 px-6 md:px-12">
-      <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">FAQs</h2>
+      <h2 className="text-3xl font-semibold text-center text-gray-900 mb-12">FAQs</h2>
       <div className="max-w-3xl mx-auto space-y-8">
         {faqs.map((faq, idx) => (
           <div key={idx}>
             <h3 className="text-lg font-semibold text-gray-800 mb-2">{faq.question}</h3>
-            <p className="text-gray-600">{faq.answer}</p>
+            <p className="text-gray-700">{faq.answer}</p>
           </div>
         ))}
       </div>

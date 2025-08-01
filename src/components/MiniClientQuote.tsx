@@ -40,7 +40,7 @@ export const MiniClientQuote = () => {
           
           <div className="h-px bg-gray-200 w-16 mx-auto mb-4"></div>
           
-          <cite className="text-gray-600 not-italic">
+          <cite className="text-gray-700 not-italic">
             <span className="font-medium">Sarah Mitchell</span><br />
             <span className="text-sm">Owner, Heritage Bakery</span>
           </cite>

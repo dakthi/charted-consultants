@@ -37,10 +37,10 @@ export function ContactFAQ() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Questions before you reach out?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Here are the most common questions we get from potential clients.
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export function ContactFAQ() {
                 className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
-                <h3 className="font-bold text-gray-900">{faq.question}</h3>
+                <h3 className="font-semibold text-gray-900">{faq.question}</h3>
                 <svg 
                   className={`w-5 h-5 text-gray-500 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
                   fill="none" 
@@ -70,7 +70,7 @@ export function ContactFAQ() {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-4">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </motion.div>
@@ -84,10 +84,10 @@ export function ContactFAQ() {
           transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
         >
           <div className="bg-gradient-to-r from-indigo-50 to-blue-50 border-2 border-indigo-200 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Still have questions?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-700 mb-6">
               Every situation is unique. We're happy to discuss your specific circumstances and answer any questions you have.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -127,17 +127,17 @@ export const TechnologyHighlight = () => {
             transition={{ delay: 0.9, duration: 0.7 }}
           >
             <div className="bg-gray-800 p-6 rounded-lg">
-              <div className="text-3xl font-bold text-green-400 mb-2">85%</div>
+              <div className="text-3xl font-semibold text-green-400 mb-2">85%</div>
               <div className="text-white font-medium mb-1">Time Savings</div>
               <div className="text-gray-400 text-sm">From 15 hours/week to 2 hours/week</div>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg">
-              <div className="text-3xl font-bold text-blue-400 mb-2">40%</div>
+              <div className="text-3xl font-semibold text-blue-400 mb-2">40%</div>
               <div className="text-white font-medium mb-1">More Qualified Leads</div>
               <div className="text-gray-400 text-sm">Better targeting and nurturing</div>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg">
-              <div className="text-3xl font-bold text-purple-400 mb-2">200%</div>
+              <div className="text-3xl font-semibold text-purple-400 mb-2">200%</div>
               <div className="text-white font-medium mb-1">ROI Improvement</div>
               <div className="text-gray-400 text-sm">Clear attribution and optimization</div>
             </div>

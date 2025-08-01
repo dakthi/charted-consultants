@@ -23,7 +23,7 @@ export const THWHowItWorks = () => {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-indigo-200 to-blue-100 bg-clip-text text-white mb-6">
+          <h2 className="text-5xl md:text-6xl font-semibold bg-gradient-to-r from-blue-200 via-indigo-200 to-blue-100 bg-clip-text text-white mb-6">
             How it works
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
@@ -37,10 +37,10 @@ export const THWHowItWorks = () => {
                 
                 <div className="relative z-10">
                   <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl mb-6 mx-auto md:mx-0">
-                    <span className="text-2xl font-bold text-white">{idx + 1}</span>
+                    <span className="text-2xl font-semibold text-white">{idx + 1}</span>
                   </div>
                   
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4 text-center md:text-left">
                     {step.title.split('. ')[1]}
                   </h3>
                   

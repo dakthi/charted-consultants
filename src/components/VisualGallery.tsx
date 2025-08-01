@@ -48,7 +48,7 @@ export const VisualGallery = () => {
         className="px-6 md:px-12 py-20 md:py-32"
       >
         <motion.p
-          className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+          className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
           initial={{ opacity: 0, y: -10 }}
           animate={isGalleryInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.7 }}
@@ -99,7 +99,7 @@ export const VisualGallery = () => {
           animate={isGalleryInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8, duration: 0.7 }}
         >
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-700 mb-6">
             Each project is custom-built for the specific needs and workflows of the business.
           </p>
           <a

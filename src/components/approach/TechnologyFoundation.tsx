@@ -54,7 +54,7 @@ export const TechnologyFoundation = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.p
-            className="uppercase text-sm tracking-wide mb-4 text-gray-600 text-center"
+            className="uppercase text-sm tracking-wide mb-4 text-gray-700 text-center"
             initial={{ opacity: 0, y: -10 }}
             animate={isTechInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
@@ -97,7 +97,7 @@ export const TechnologyFoundation = () => {
                   {foundation.icon}
                 </div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-900">{foundation.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">{foundation.description}</p>
+                <p className="text-gray-700 leading-relaxed text-sm">{foundation.description}</p>
               </motion.div>
             ))}
           </div>
@@ -112,15 +112,15 @@ export const TechnologyFoundation = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <h4 className="font-medium text-gray-900 mb-2">No Monthly Fees</h4>
-                <p className="text-gray-600 text-sm">Pay once, own forever. No subscription traps or surprise price increases.</p>
+                <p className="text-gray-700 text-sm">Pay once, own forever. No subscription traps or surprise price increases.</p>
               </div>
               <div>
                 <h4 className="font-medium text-gray-900 mb-2">Complete Control</h4>
-                <p className="text-gray-600 text-sm">Make changes when you want, how you want. No platform restrictions.</p>
+                <p className="text-gray-700 text-sm">Make changes when you want, how you want. No platform restrictions.</p>
               </div>
               <div>
                 <h4 className="font-medium text-gray-900 mb-2">Future-Proof</h4>
-                <p className="text-gray-600 text-sm">Your systems grow with your business, not against vendor limitations.</p>
+                <p className="text-gray-700 text-sm">Your systems grow with your business, not against vendor limitations.</p>
               </div>
             </div>
           </motion.div>

@@ -17,10 +17,10 @@ export function QuickContactForm() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
             Tell us about your project
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
             The more context you provide, the better we can tailor our response to your specific needs.
           </p>
         </motion.div>

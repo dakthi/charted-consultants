@@ -15,12 +15,20 @@ export const Cta = () => {
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
-          <Link
-            href="/contact"
-            className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 hover:bg-gray-50 transition-colors"
-          >
-            Start a Conversation
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href="/contact"
+              className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 hover:bg-gray-50 transition-colors"
+            >
+              Start a Conversation
+            </Link>
+            <Link
+              href="/blog"
+              className="inline-block py-3 mx-auto text-lg font-medium text-center text-white border-2 border-white rounded-md px-7 lg:px-10 lg:py-5 hover:bg-white hover:text-indigo-600 transition-colors"
+            >
+              Read Our Insights
+            </Link>
+          </div>
         </div>
       </div>
     </Container>

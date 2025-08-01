@@ -4,15 +4,15 @@ export const THWPricing = () => {
   return (
     <section className="bg-gray-50 py-24 px-6 md:px-12 text-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Simple, Flat Pricing</h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <h2 className="text-4xl font-semibold text-gray-900 mb-6">Simple, Flat Pricing</h2>
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12 leading-relaxed">
           One fixed price. No hidden fees. No subscriptions. Just a real website you own — delivered in three hours.
         </p>
 
         <div className="inline-block bg-white rounded-2xl px-12 py-16 shadow-xl border border-gray-100 max-w-md mx-auto">
           <div className="mb-8">
-            <p className="text-6xl font-bold text-gray-900 mb-2">£1,000</p>
-            <p className="text-lg text-gray-600 font-medium">One-time payment</p>
+            <p className="text-6xl font-semibold text-gray-900 mb-2">£1,000</p>
+            <p className="text-lg text-gray-700 font-medium">One-time payment</p>
           </div>
 
           <ul className="text-left text-gray-700 text-lg space-y-4 mb-10">

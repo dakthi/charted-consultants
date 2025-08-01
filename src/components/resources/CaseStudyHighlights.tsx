@@ -17,10 +17,10 @@ export function CaseStudyHighlights() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Case Study Highlights
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-12">
             Real results from real businesses
           </h2>
         </motion.div>
@@ -34,16 +34,16 @@ export function CaseStudyHighlights() {
           >
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3">
-                <span className="text-white text-sm font-bold">3x</span>
+                <span className="text-white text-sm font-semibold">3x</span>
               </div>
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
                 GROWTH
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">
               Architecture Firm: From Invisible to Industry Leader
             </h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               How a 50-year-old architecture firm increased qualified leads by 300% and positioned themselves as thought leaders through strategic content and owned digital assets.
             </p>
             <div className="flex items-center justify-between mb-4">
@@ -71,16 +71,16 @@ export function CaseStudyHighlights() {
           >
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3">
-                <span className="text-white text-sm font-bold">5x</span>
+                <span className="text-white text-sm font-semibold">5x</span>
               </div>
               <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">
                 EFFICIENCY
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">
               Consulting Practice: Streamlined Client Experience
             </h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               Transformed a manual client intake process into an automated system, reducing admin time by 80% while improving client satisfaction and project delivery speed.
             </p>
             <div className="flex items-center justify-between mb-4">
@@ -108,16 +108,16 @@ export function CaseStudyHighlights() {
           >
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
-                <span className="text-white text-sm font-bold">10x</span>
+                <span className="text-white text-sm font-semibold">10x</span>
               </div>
               <span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                 FEATURED
               </span>
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">
               Professional Services: Complete Digital Transformation
             </h3>
-            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-700 text-sm mb-4 leading-relaxed">
               End-to-end transformation from paper-based processes to fully integrated digital systems. Achieved 10x improvement in client acquisition costs.
             </p>
             <div className="flex items-center justify-between mb-4">
@@ -146,38 +146,49 @@ export function CaseStudyHighlights() {
         >
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">50+</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Projects Completed</div>
-              <div className="text-gray-600 text-sm">Across diverse industries</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">50+</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Projects Completed</div>
+              <div className="text-gray-700 text-sm">Across diverse industries</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">95%</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Client Satisfaction</div>
-              <div className="text-gray-600 text-sm">Based on post-project surveys</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">95%</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Client Satisfaction</div>
+              <div className="text-gray-700 text-sm">Based on post-project surveys</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">6 Months</div>
-              <div className="text-lg font-bold text-gray-900 mb-1">Average Timeline</div>
-              <div className="text-gray-600 text-sm">From start to full handover</div>
+              <div className="text-3xl font-semibold text-indigo-600 mb-2">6 Months</div>
+              <div className="text-lg font-semibold text-gray-900 mb-1">Average Timeline</div>
+              <div className="text-gray-700 text-sm">From start to full handover</div>
             </div>
           </div>
         </motion.div>
 
         <motion.div
-          className="mt-8 text-center"
+          className="mt-8 text-center space-y-4"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 1.0, ease: 'easeOut' }}
         >
-          <Link 
-            href="/cases" 
-            className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium"
-          >
-            View All Case Studies
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link 
+              href="/cases" 
+              className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium"
+            >
+              View All Case Studies
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <Link 
+              href="/blog" 
+              className="inline-flex items-center border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-900 hover:text-white transition-colors font-medium"
+            >
+              Read Our Blog
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

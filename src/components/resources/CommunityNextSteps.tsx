@@ -18,13 +18,13 @@ export function CommunityNextSteps() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-center mb-16"
         >
-          <p className="uppercase text-sm tracking-wide text-gray-600 mb-2">
+          <p className="uppercase text-sm tracking-wide text-gray-700 mb-2">
             Community & Next Steps
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Ready to go deeper?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Connect with us and other business operators who are building something that lasts.
           </p>
         </motion.div>
@@ -35,7 +35,7 @@ export function CommunityNextSteps() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Connect with us</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Connect with us</h3>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
@@ -44,8 +44,8 @@ export function CommunityNextSteps() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2">LinkedIn</h4>
-                  <p className="text-gray-600 text-sm mb-3">
+                  <h4 className="font-semibold text-gray-900 mb-2">LinkedIn</h4>
+                  <p className="text-gray-700 text-sm mb-3">
                     Follow our updates, case studies, and insights from the field.
                   </p>
                   <a 
@@ -64,8 +64,8 @@ export function CommunityNextSteps() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2">Instagram</h4>
-                  <p className="text-gray-600 text-sm mb-3">
+                  <h4 className="font-semibold text-gray-900 mb-2">Instagram</h4>
+                  <p className="text-gray-700 text-sm mb-3">
                     Behind-the-scenes content and quick tips for business operators.
                   </p>
                   <a 
@@ -79,18 +79,18 @@ export function CommunityNextSteps() {
 
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2">Direct Email</h4>
-                  <p className="text-gray-600 text-sm mb-3">
+                  <h4 className="font-semibold text-gray-900 mb-2">Direct Email</h4>
+                  <p className="text-gray-700 text-sm mb-3">
                     Questions about resources? Want to suggest a new guide? We read every email.
                   </p>
                   <a 
                     href="mailto:hello@chartedconsultants.com" 
-                    className="text-gray-600 hover:text-gray-700 font-medium text-sm"
+                    className="text-gray-700 hover:text-gray-700 font-medium text-sm"
                   >
                     hello@chartedconsultants.com →
                   </a>
@@ -105,8 +105,8 @@ export function CommunityNextSteps() {
             transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
           >
             <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border-2 border-indigo-200 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Ready for hands-on help?</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Ready for hands-on help?</h3>
+              <p className="text-gray-700 mb-8 leading-relaxed">
                 While our resources are comprehensive, sometimes you need personalized guidance. 
                 Book a consultation to discuss your specific situation and get a custom roadmap.
               </p>
@@ -153,25 +153,25 @@ export function CommunityNextSteps() {
           transition={{ duration: 0.7, delay: 0.7, ease: 'easeOut' }}
         >
           <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Join business operators who've made the shift
             </h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
               From invisible to unmistakable. From renting to owning. From scattered to systematic. 
               These businesses are building something that lasts.
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-2xl font-bold text-indigo-600 mb-1">150+</div>
-                <div className="text-gray-600 text-sm">Resources Downloaded</div>
+                <div className="text-2xl font-semibold text-indigo-600 mb-1">150+</div>
+                <div className="text-gray-700 text-sm">Resources Downloaded</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-indigo-600 mb-1">50+</div>
-                <div className="text-gray-600 text-sm">Successful Migrations</div>
+                <div className="text-2xl font-semibold text-indigo-600 mb-1">50+</div>
+                <div className="text-gray-700 text-sm">Successful Migrations</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-indigo-600 mb-1">95%</div>
-                <div className="text-gray-600 text-sm">Would Recommend</div>
+                <div className="text-2xl font-semibold text-indigo-600 mb-1">95%</div>
+                <div className="text-gray-700 text-sm">Would Recommend</div>
               </div>
             </div>
           </div>

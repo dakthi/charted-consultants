@@ -6,7 +6,7 @@ export const THWCTA = () => {
   return (
     <section className="bg-gray-900 text-white py-20 px-6 md:px-12 text-center min-h-screen flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-semibold mb-6">
           Ready to launch your website in a single morning?
         </h2>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
