@@ -2,17 +2,28 @@
 
 import { usePathname } from 'next/navigation';
 import { Navbar } from './Navbar';
+import { Footer } from './Footer';
 
 export function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isHome = pathname === '/';
-  const isThreeHourWebsite = pathname === '/services/three-hour-website';
+  const pagesWithTransparentNavbar = [
+    '/',
+    '/approach',
+    '/cases',
+    '/services',
+    '/resources',
+    '/contact',
+    '/services/three-hour-website'
+  ];
+  
+  const hasTransparentNavbar = pagesWithTransparentNavbar.includes(pathname);
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Do not wrap in container */}
-      {!isHome && !isThreeHourWebsite && <Navbar />}
+      {/* Only show layout navbar for pages without their own transparent navbar */}
+      {!hasTransparentNavbar && <Navbar />}
       <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }

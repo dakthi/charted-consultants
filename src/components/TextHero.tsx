@@ -9,7 +9,7 @@ export const TextHero = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-white/95 backdrop-blur-sm scroll-snap-section">
       <div
         ref={ref}
         className="flex flex-wrap items-center pt-20 px-5 xl:px-0"
@@ -18,7 +18,7 @@ export const TextHero = () => {
         <div className="order-first xl:order-first flex items-start w-full md:w-1/2 lg:w-1/2">
           <div className="max-w-xl xl:mx-auto">
             <motion.p
-              className="text-4xl font-bold leading-snug tracking-tight text-gray-900 dark:text-white lg:text-6xl lg:leading-tight xl:text-6xl xl:leading-tight mb-0 xl:mb-6"
+              className="text-4xl font-bold leading-snug tracking-tight text-gray-900 lg:text-6xl lg:leading-tight xl:text-6xl xl:leading-tight mb-0 xl:mb-6"
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
@@ -31,7 +31,7 @@ export const TextHero = () => {
         {/* Right Column (Image + Text) */}
         <div className="order-last xl:order-last w-full md:w-1/2 lg:w-1/2 lg:px-12 mb-0 lg:mb-0 mt-5 md:mt-0">
           <motion.p
-            className="first:mt-0 text-md leading-relaxed text-gray-600 dark:text-gray-300 lg:text-xl xl:text-xl mb-5"
+            className="first:mt-0 text-md leading-relaxed text-gray-600 lg:text-xl xl:text-xl mb-5"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
@@ -46,7 +46,7 @@ export const TextHero = () => {
           </motion.p>
 
           <motion.p
-            className="text-md leading-relaxed text-gray-600 dark:text-gray-300 lg:text-xl xl:text-xl mb-3"
+            className="text-md leading-relaxed text-gray-600 lg:text-xl xl:text-xl mb-3"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
@@ -56,7 +56,7 @@ export const TextHero = () => {
 
           {/* Part 2: The question — highlighted */}
           <motion.p
-            className="text-sm leading-relaxed mb-5 text-gray-900 dark:text-gray-100 font-semibold lg:text-xl xl:text-xl bg-yellow-100 dark:bg-yellow-900 px-2 py-1 rounded"
+            className="text-sm leading-relaxed mb-5 text-gray-900 font-semibold lg:text-xl xl:text-xl bg-yellow-100 px-2 py-1 rounded"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
@@ -66,7 +66,7 @@ export const TextHero = () => {
 
           {/* Part 3: Closing text */}
           <motion.p
-            className="text-md leading-relaxed text-gray-600 dark:text-gray-300 lg:text-xl xl:text-xl mb-0"
+            className="text-md leading-relaxed text-gray-600 lg:text-xl xl:text-xl mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}

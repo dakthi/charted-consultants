@@ -1,18 +1,53 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Container } from "@/components/Container";
-import { SectionTitle } from "@/components/SectionTitle";
+import { useLenis } from '@/hooks/useLenis';
+import { Navbar } from '@/components/Navbar';
+import { ApproachPrinciple } from '@/components/approach/ApproachPrinciple';
+import { WhereWeStart } from '@/components/approach/WhereWeStart';
+import { TechnologyFoundation } from '@/components/approach/TechnologyFoundation';
+import { StorytellingEngine } from '@/components/approach/StorytellingEngine';
+import { MomentumSystem } from '@/components/approach/MomentumSystem';
+import { TeamAndTools } from '@/components/approach/TeamAndTools';
+import { HowWeWorkTogether } from '@/components/approach/HowWeWorkTogether';
+import { ProofAndOutcomes } from '@/components/approach/ProofAndOutcomes';
+import { ApproachCallToAction } from '@/components/approach/ApproachCallToAction';
 
 export default function ApproachPage() {
+  // useLenis(); // Disabled - using native scroll snap instead
+
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
 
+  // --- Simple scroll detection ---
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  // ------------------------------
+
   return (
     <>
-      {/* Hero Section with Background */}
-      <div className="relative isolate">
+      {/* Transparent Navbar - same as homepage */}
+      <div
+        className={`fixed top-0 left-0 w-full z-30 transition-all duration-500 ${
+          scrolled
+            ? 'bg-gray-950/90 backdrop-blur-sm shadow-md'
+            : 'bg-transparent'
+        }`}
+      >
+        <Navbar />
+      </div>
+
+      {/* Hero Section with Same Background as Homepage */}
+      <div className="relative isolate scroll-snap-section-full">
         {/* Mobile image */}
         <div className="block md:hidden w-full">
           <img
@@ -33,13 +68,13 @@ export default function ApproachPage() {
           }}
         />
 
-        {/* Dark overlay */}
-        <div className="hidden md:block absolute inset-0 bg-black/60 z-10" />
+        {/* Dark overlay for readability */}
+        <div className="hidden md:block absolute inset-0 bg-black/30 z-10" />
 
         {/* Hero Content */}
         <div
           ref={heroRef}
-          className="relative z-20 flex flex-col justify-center px-6 md:px-12 text-white py-12 md:h-[50vh]"
+          className="relative z-20 flex flex-col justify-center px-6 md:px-12 text-white py-12 md:h-screen"
         >
           <motion.p
             className="uppercase text-sm tracking-wide mb-2"
@@ -56,80 +91,30 @@ export default function ApproachPage() {
             animate={isHeroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7, ease: 'easeOut' }}
           >
-            How We Work
+            Legacy businesses deserve modern operators, not just quick fixes
           </motion.h1>
 
           <motion.p
-            className="text-lg max-w-2xl"
+            className="text-lg max-w-2xl mb-4"
             initial={{ opacity: 0, y: 10 }}
             animate={isHeroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.7, duration: 0.7 }}
           >
-            Our proven approach to transforming legacy businesses with modern operations.
+            Our proven approach: technology + story + momentum, built for ownership, not dependency.
           </motion.p>
         </div>
       </div>
 
-      {/* Main Content */}
-      <Container className="py-16">
-      
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 mt-16">
-        <div className="lg:col-span-2 xl:col-span-2">
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Discovery & Analysis</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                We start by understanding your business inside and out. Through comprehensive analysis 
-                of your current operations, market position, and growth potential, we identify key 
-                opportunities for modernization and efficiency gains.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Strategic Planning</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Based on our findings, we develop a tailored roadmap that aligns with your business 
-                goals. Our strategic approach ensures that every recommendation is practical, 
-                measurable, and designed for sustainable growth.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Implementation & Support</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                We don't just plan – we execute. Our team works closely with yours to implement 
-                solutions, provide ongoing support, and ensure that changes deliver the expected 
-                results. We're your partners in transformation.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="xl:col-span-1">
-          <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
-            <h4 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">Why Our Approach Works</h4>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
-              <li className="flex items-start">
-                <span className="text-indigo-600 mr-2">✓</span>
-                Data-driven decision making
-              </li>
-              <li className="flex items-start">
-                <span className="text-indigo-600 mr-2">✓</span>
-                Tailored to your industry
-              </li>
-              <li className="flex items-start">
-                <span className="text-indigo-600 mr-2">✓</span>
-                Focus on measurable results
-              </li>
-              <li className="flex items-start">
-                <span className="text-indigo-600 mr-2">✓</span>
-                Long-term partnership mindset
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </Container>
+      {/* Approach Components */}
+      <ApproachPrinciple />
+      <WhereWeStart />
+      <TechnologyFoundation />
+      <StorytellingEngine />
+      <MomentumSystem />
+      <TeamAndTools />
+      <HowWeWorkTogether />
+      <ProofAndOutcomes />
+      <ApproachCallToAction />
     </>
   );
 }

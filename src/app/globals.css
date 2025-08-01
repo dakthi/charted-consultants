@@ -5,9 +5,48 @@
 
 
 @layer base {
-  html,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #111827; /* Match footer color */
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+  
   body {
-
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: white;
+  }
+  
+  /* Ensure no extra space below footer */
+  #__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Scroll snap for sections - natural browser snapping */
+  .scroll-snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+  
+  /* For full-height sections */
+  .scroll-snap-section-full {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    min-height: 100vh;
+  }
+  
+  /* Allow users to scroll through sections without forcing stops */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-snap-type: none;
+      scroll-behavior: auto;
+    }
   }
 }
 

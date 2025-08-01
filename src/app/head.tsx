@@ -3,11 +3,10 @@ export default function Head() {
     <>
       <title>Charted</title>
 
-      {/* Light theme favicon */}
+      {/* Default favicon */}
       <link
         rel="icon"
-        href="/white-favicon.ico"
-        media="(prefers-color-scheme: light)"
+        href="/favicon.ico"
         sizes="any"
       />
 
@@ -18,6 +17,21 @@ export default function Head() {
         media="(prefers-color-scheme: dark)"
         sizes="any"
       />
+      
+      {/* Apple touch icon */}
+      <link
+        rel="apple-touch-icon"
+        href="/favicon.ico"
+      />
+      
+      {/* Web manifest */}
+      <link
+        rel="manifest"
+        href="/site.webmanifest"
+      />
+      
+      {/* Theme color */}
+      <meta name="theme-color" content="#334155" />
     </>
   );
 }

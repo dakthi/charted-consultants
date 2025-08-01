@@ -1,0 +1,20 @@
+{
+  "name": "Charted Consultants",
+  "short_name": "Charted",
+  "description": "Navigate the business water gracefully",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/black-favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#334155",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

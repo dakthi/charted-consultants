@@ -3,67 +3,112 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Container } from '@/components/Container';
-import { SectionTitle } from './SectionTitle';
 
-type Step = {
-  title: string;
-  description: string;
-};
-
-const steps: Step[] = [
+const steps = [
   {
     title: 'Technology',
-    description:
-      'We help you set up essential systems — website, booking, payments, SEO, and analytics — fully owned and under your control.',
+    heading: 'Your digital foundation, fully yours',
+    paragraph1:
+      'We put the essential systems in place — websites, booking flows, payments, SEO, and analytics — built so you fully own them.',
+    paragraph2:
+      'No subscriptions you don’t control, no tech that locks you in. Everything we set up is portable and future‑proof.',
+    details: [
+      { title: 'Website & Hosting', excerpt: 'Fast, secure, and fully owned by you — no rented platforms or surprise restrictions.', category: 'core' },
+      { title: 'Booking & Payments', excerpt: 'Seamless appointment scheduling and integrated payments that reduce admin and boost conversion.', category: 'operations' },
+      { title: 'SEO & Analytics', excerpt: 'Search engine optimisation and data insights that show what’s working and where to improve.', category: 'growth' },
+      { title: 'Ownership & Control', excerpt: 'All systems configured so you hold the keys. No lock‑ins, no dependency on a single vendor.', category: 'philosophy' },
+    ],
   },
   {
     title: 'Story',
-    description:
-      'We film, edit, and repurpose your story across formats so that Google, ChatGPT, and your audience understand and value your work.',
+    heading: 'Show who you are and why it matters',
+    paragraph1:
+      'We capture and shape your story — filming, editing, and repurposing it so Google, ChatGPT, and your audience see the real value of what you do.',
+    paragraph2:
+      'Clear, authentic, and designed to build trust. From long-form case studies to short social clips, your work speaks for itself.',
+    details: [
+      { title: 'Filming & Photography', excerpt: 'Show your process, your team, and your results with clear, authentic visuals.', category: 'media' },
+      { title: 'Content Strategy', excerpt: 'From long‑form to short social snippets, we make your story work across platforms.', category: 'planning' },
+      { title: 'AI‑ready Metadata', excerpt: 'Optimised content so search engines and AI tools like ChatGPT can surface your work.', category: 'visibility' },
+    ],
+  },
+  {
+    title: 'Momentum',
+    heading: 'From one-off wins to long-term rhythm',
+    paragraph1:
+      'We connect technology and storytelling into a rhythm — regular updates, measurable results, and the kind of consistency that turns one-off wins into long-term growth.',
+    paragraph2:
+      'With performance tracking and iterative improvements, your business evolves instead of standing still.',
+    details: [
+      { title: 'Editorial Rhythm', excerpt: 'A sustainable schedule for content updates so you stay visible without burnout.', category: 'cadence' },
+      { title: 'Performance Tracking', excerpt: 'Analytics and reporting so you know what’s resonating and where to focus.', category: 'insights' },
+      { title: 'Iterative Improvements', excerpt: 'We adapt and improve your systems and story as your business evolves.', category: 'evolution' },
+    ],
   },
 ];
 
-export default function ChartedServicesStepper() {
+export default function ChartedServices() {
   const [activeStep, setActiveStep] = useState(0);
+  const step = steps[activeStep];
 
   return (
-    <section className="relative bg-gradient-to-b from-blue-950 to-black text-white h-screen">
-      {/* Overlay */}
+    <section className="relative bg-gradient-to-b from-blue-950 to-black text-white scroll-snap-section">
       <div className="absolute inset-0 bg-black/60 z-0" />
-
-      {/* Content */}
       <div className="relative z-10">
         <Container>
-          {/* Logo at top */}
+          {/* Logo */}
           <div className="flex justify-center items-start mb-8">
             <Image src="/img/logo-half.png" alt="Logo" width={240} height={120} />
           </div>
 
-          {/* Stepper */}
-          <div className="flex justify-center sm:px-0 mb-8">
-            {steps.map((step, index) => (
+          {/* Tabs */}
+          <div className="flex justify-center mb-10">
+            {steps.map((s, index) => (
               <button
                 key={index}
-                className={`px-4 py-2 mx-2 border-b-4 text-sm font-light uppercase whitespace-nowrap transition-colors ${
+                className={`px-5 py-3 mx-3 border-b-4 text-base font-light uppercase transition-colors ${
                   index === activeStep
                     ? 'border-white text-white'
                     : 'border-transparent text-white hover:border-gray-300'
                 }`}
                 onClick={() => setActiveStep(index)}
               >
-                {step.title}
+                {s.title}
               </button>
             ))}
           </div>
 
-          {/* Active Step Content */}
-          <div className="max-w-3xl mx-auto text-center px-4 sm:px-0">
-            <h3 className="text-2xl font-light uppercase mb-4 md:mb-2 lg:mb-4">
-              {steps[activeStep].title}
-            </h3>
-            <p className="text-md text-gray-300 leading-relaxed">
-              {steps[activeStep].description}
-            </p>
+          {/* Content */}
+          <div className="text-center max-w-4xl mx-auto px-6">
+            <h2 className="text-4xl lg:text-5xl font-light mb-8 leading-relaxed">
+              {step.heading}
+            </h2>
+            <div className="space-y-6 mb-16">
+              <p className="text-xl text-gray-300 leading-relaxed">{step.paragraph1}</p>
+              <p className="text-xl text-gray-300 leading-relaxed">{step.paragraph2}</p>
+            </div>
+          </div>
+
+          {/* Larger Horizontal Tiles */}
+          <div className="flex flex-wrap justify-center gap-10">
+            {step.details.map((detail, index) => (
+              <div
+                key={index}
+                className="flex-none w-[22rem] h-[14rem] bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-xl hover:shadow-black/20 hover:border-white/30 transition-all duration-200"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <h4 className="font-semibold tracking-wide text-white text-lg leading-tight">
+                    {detail.title}
+                  </h4>
+                  <span className="text-sm text-gray-400 ml-2 flex-shrink-0">
+                    {detail.category}
+                  </span>
+                </div>
+                <p className="text-gray-300 text-base leading-relaxed">
+                  {detail.excerpt}
+                </p>
+              </div>
+            ))}
           </div>
         </Container>
       </div>
