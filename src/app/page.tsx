@@ -20,7 +20,7 @@ import { TextHero } from '@/components/TextHero';
 import ChartedServicesStepper from '@/components/ChartedServicesStepper';
 
 export default function HomePage() {
-  // useLenis(); // Disabled - using native scroll snap instead
+  useLenis();
 
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
@@ -81,7 +81,7 @@ export default function HomePage() {
       {/* All content flows over background */}
       <div className="relative z-20">
         {/* Hero Content */}
-        <section className="scroll-snap-section-full">
+        <section>
           <div
             ref={heroRef}
             className="flex flex-col justify-center px-6 md:px-12 text-white py-12 min-h-screen"

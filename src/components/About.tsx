@@ -8,7 +8,7 @@ export const About = () => {
   const isAboutInView = useInView(aboutRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative scroll-snap-section">
+    <section className="relative">
       {/* About Content */}
       <div
         ref={aboutRef}

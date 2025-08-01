@@ -8,7 +8,7 @@ export const KeyInsight = () => {
   const isInsightInView = useInView(insightRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-gray-900 text-white scroll-snap-section">
+    <section className="relative bg-gray-900 text-white">
       <div
         ref={insightRef}
         className="flex flex-col items-center justify-center px-6 md:px-12 py-24 md:py-40 text-center"

@@ -7,7 +7,7 @@ import { useLenis } from '@/hooks/useLenis';
 import { Navbar } from '@/components/Navbar';
 
 export default function PrivacyPage() {
-  // useLenis(); // Disabled - using native scroll snap instead
+  useLenis();
 
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
       </div>
 
       {/* Hero Section with Same Background as Homepage */}
-      <div className="relative isolate scroll-snap-section-full">
+      <div className="relative isolate min-h-screen">
         {/* Mobile image */}
         <div className="block md:hidden w-full">
           <Image
@@ -94,7 +94,7 @@ export default function PrivacyPage() {
       </div>
 
       {/* Privacy Content */}
-      <div className="py-20 bg-white scroll-snap-section">
+      <div className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 mb-8">

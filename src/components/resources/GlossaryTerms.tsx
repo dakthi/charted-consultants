@@ -8,7 +8,7 @@ export function GlossaryTerms() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-20 bg-gray-50 scroll-snap-section">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <motion.div
           ref={ref}

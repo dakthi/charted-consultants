@@ -13,7 +13,7 @@ import { ContactFAQ } from '@/components/contact/ContactFAQ';
 import { FinalCTABanner } from '@/components/contact/FinalCTABanner';
 
 export default function ContactPage() {
-  // useLenis(); // Disabled - using native scroll snap instead
+  useLenis();
 
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
@@ -45,7 +45,7 @@ export default function ContactPage() {
       </div>
 
       {/* Hero Section with Same Background as Homepage */}
-      <div className="relative isolate scroll-snap-section-full">
+      <div className="relative isolate min-h-screen">
         {/* Mobile image */}
         <div className="block md:hidden w-full">
           <Image

@@ -8,7 +8,7 @@ export const BehindTheScenes = () => {
   const isBehindInView = useInView(behindRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-white/95 backdrop-blur-sm scroll-snap-section">
+    <section className="relative bg-white/95 backdrop-blur-sm">
       <div
         ref={behindRef}
         className="px-6 md:px-12 py-20 md:py-32"

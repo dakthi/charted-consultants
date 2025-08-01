@@ -9,7 +9,7 @@ export const CaseStudyShowcase = () => {
   const isCaseInView = useInView(caseRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-gray-50 scroll-snap-section">
+    <section className="relative bg-gray-50">
       <div
         ref={caseRef}
         className="px-6 md:px-12 py-20 md:py-32"

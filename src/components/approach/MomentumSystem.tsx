@@ -8,7 +8,7 @@ export const MomentumSystem = () => {
   const isMomentumInView = useInView(momentumRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-white scroll-snap-section">
+    <section className="relative bg-white">
       <div
         ref={momentumRef}
         className="px-6 md:px-12 py-20 md:py-32"

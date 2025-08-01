@@ -9,7 +9,7 @@ export const FounderStory = () => {
   const isStoryInView = useInView(storyRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-gray-900 text-white scroll-snap-section">
+    <section className="relative bg-gray-900 text-white">
       <div
         ref={storyRef}
         className="px-6 md:px-12 py-20 md:py-32"

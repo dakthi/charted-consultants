@@ -9,7 +9,7 @@ export function CommunityNextSteps() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-20 bg-white scroll-snap-section">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <motion.div
           ref={ref}

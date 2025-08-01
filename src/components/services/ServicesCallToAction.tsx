@@ -9,7 +9,7 @@ export function ServicesCallToAction() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-20 bg-white scroll-snap-section">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <motion.div
           ref={ref}

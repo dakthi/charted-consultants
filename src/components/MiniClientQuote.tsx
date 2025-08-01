@@ -9,7 +9,7 @@ export const MiniClientQuote = () => {
   const isQuoteInView = useInView(quoteRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-white scroll-snap-section">
+    <section className="relative bg-white">
       <div
         ref={quoteRef}
         className="px-6 md:px-12 py-16 md:py-24"

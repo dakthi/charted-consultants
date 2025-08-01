@@ -9,7 +9,7 @@ export const TextHero = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <div className="bg-white/95 backdrop-blur-sm scroll-snap-section">
+    <div className="bg-white/95 backdrop-blur-sm">
       <div
         ref={ref}
         className="flex flex-wrap items-center pt-20 px-5 xl:px-0"

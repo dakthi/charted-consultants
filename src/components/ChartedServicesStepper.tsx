@@ -52,7 +52,7 @@ export default function ChartedServices() {
   const step = steps[activeStep];
 
   return (
-    <section className="relative bg-gradient-to-b from-blue-950 to-black text-white scroll-snap-section">
+    <section className="relative bg-gradient-to-b from-blue-950 to-black text-white">
       <div className="absolute inset-0 bg-black/60 z-0" />
       <div className="relative z-10">
         <Container>

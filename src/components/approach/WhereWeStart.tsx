@@ -8,7 +8,7 @@ export const WhereWeStart = () => {
   const isStartInView = useInView(startRef, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative bg-white scroll-snap-section">
+    <section className="relative bg-white">
       <div
         ref={startRef}
         className="px-6 md:px-12 py-20 md:py-32"

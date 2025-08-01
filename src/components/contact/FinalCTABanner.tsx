@@ -9,7 +9,7 @@ export function FinalCTABanner() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-blue-900 scroll-snap-section">
+    <section className="py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-blue-900">
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
         <motion.div
           ref={ref}

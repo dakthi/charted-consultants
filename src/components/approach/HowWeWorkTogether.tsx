@@ -59,7 +59,7 @@ export const HowWeWorkTogether = () => {
   ];
 
   return (
-    <section className="relative bg-gray-50 scroll-snap-section">
+    <section className="relative bg-gray-50">
       <div
         ref={workRef}
         className="px-6 md:px-12 py-20 md:py-32"

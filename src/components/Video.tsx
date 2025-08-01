@@ -13,15 +13,15 @@ export function Video({ videoId }: Readonly<VideoProps>) {
 
   return (
     <Container className="pr-5 pl-5">
-      <div className="relative w-full h-[500px] max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-red-700 cursor-pointer bg-gradient-to-tr from-black to-white ">
+      <div className="relative w-full h-[500px] max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-red-700 cursor-pointer bg-gradient-to-tr from-black to-white">
         {!playVideo && (
           <button
             onClick={() => setPlayVideo(!playVideo)}
-            className="absolute inset-auto w-16 h-16 text-white transform -translate-x-1/2 -translate-y-1/2 lg:w-28 lg:h-28 top-1/2 left-1/2 "
+            className="absolute inset-auto w-16 h-16 text-white transform -translate-x-1/2 -translate-y-1/2 lg:w-28 lg:h-28 top-1/2 left-1/2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-16 h-16  lg:w-28 lg:h-28"
+              className="w-16 h-16 lg:w-28 lg:h-28"
               viewBox="0 0 20 20"
               fill="currentColor"
             >

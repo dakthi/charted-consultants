@@ -17,7 +17,7 @@ import { PricingPhilosophy } from '@/components/services/PricingPhilosophy';
 import { ServicesCallToAction } from '@/components/services/ServicesCallToAction';
 
 export default function ServicesPage() {
-  // useLenis(); // Disabled - using native scroll snap instead
+  useLenis();
 
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
@@ -49,7 +49,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Hero Section with Same Background as Homepage */}
-      <div className="relative isolate scroll-snap-section-full">
+      <div className="relative isolate min-h-screen">
         {/* Mobile image */}
         <div className="block md:hidden w-full">
           <Image

@@ -44,7 +44,7 @@ export const FAQAccordion = () => {
   ];
 
   return (
-    <section className="relative bg-white scroll-snap-section">
+    <section className="relative bg-white">
       <div
         ref={faqRef}
         className="px-6 md:px-12 py-20 md:py-32"
